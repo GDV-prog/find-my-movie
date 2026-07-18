@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Env / secrets
+.env
+
+# Data / local Qdrant db / рантайм-логи
+data/db/
+data/*.csv
+# общий датасет (8142 фильма) — выкладываем, чтобы все индексировали у себя
+!data/raw.csv
+data/*.log
+data/*.out
+data/*.tar.gz
+
+# Локальная модель эмбеддингов (2.2 ГБ, качается отдельно)
+models/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
